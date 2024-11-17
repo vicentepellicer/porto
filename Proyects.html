@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/Css/ProyectsStyle.css" />
+    <script defer src="./assets/JS/main.js"></script>
+    <title>Portfolio Alberto serrano Lechuga</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar-nav">
+        <ul>
+          <li class="nav-item">
+            <h2>
+              <a href="Index.html" data-es="Sobre mí" data-en="About me"
+                >Sobre mí</a
+              >
+            </h2>
+          </li>
+          <li class="nav-item">
+            <h2>
+              <a href="Proyects.html" data-es="Proyectos" data-en="Projects"
+                >Proyectos</a
+              >
+            </h2>
+          </li>
+          <li class="nav-item">
+            <h2>
+              <a href="Contact.html" data-es="Contacto" data-en="Contact me"
+                >Contacto</a
+              >
+            </h2>
+          </li>
+          <li class="nav-item">
+            <select id="language" onchange="changeLanguage()">
+              <option
+                value="es"
+                data-flag="https://cdn.pixabay.com/photo/2016/10/24/17/42/spain-1766739_960_720.png"
+                alt="idioma español"
+                class="img-fluid"
+              >
+                Español
+              </option>
+              <option
+                value="en"
+                data-flag="https://static.vecteezy.com/system/resources/thumbnails/011/571/446/small_2x/circle-flag-of-usa-free-png.png"
+                alt="Idioma inglés"
+                class="img-fluid"
+              >
+                English
+              </option>
+            </select>
+            <div id="flag-container">
+              <img
+                id="selected-flag"
+                src="https://cdn.pixabay.com/photo/2016/10/24/17/42/spain-1766739_960_720.png"
+                alt="Español"
+                class="img-fluid"
+              />
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <!-- Sección principal 2 en un Jumbotron -->
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6 offset-md-2">
+                <h3 data-en="Services">Servicios</h3>
+                <!-- Ejemplos de productos/servicios en la sección 2 -->
+                <div class="row">
+                  <div class="col-md-4">
+                    <!-- Cambiando servicios por cards -->
+                    <div class="card">
+                      <img
+                        src="./Images/Diseñoweb.png"
+                        alt="Web Designing Image"
+                        class="img-fluid"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title" data-en="Web Application Design">Diseño de Aplicaciones Web</h5>
+                        <p class="card-text" data-en="Create a unique online experience with our web application design service. I transform your ideas into captivating and functional interfaces to provide your users with an exceptional experience. Elevate your digital presence with a standout design!""> Crea una experiencia única en línea con nuestro servicio de diseño de aplicaciones web. Transformo tus ideas en interfaces cautivadoras y funcionales para ofrecer a tus usuarios una experiencia excepcional. ¡Eleva tu presencia digital con un diseño que destaque!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <!-- Cambiando servicios por cards -->
+                    <div class="card">
+                      <img
+                        src="./Images/mantenimientoweb.png"
+                        alt="Web Maintenance Image"
+                        class="img-fluid"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title" data-en="Maintenance and Enhancements for Web Applications">Mantenimiento y mejoras de aplicaciones Web</h5>
+                        <p class="card-text" data-en="I specialize in maintaining and enhancing web applications. Ensure the seamless functionality and continual improvement of your online presence with my dedicated services. Let's optimize your digital experience together!">Me especializo en el mantenimiento y mejora de aplicaciones web. Asegura la funcionalidad continua y la mejora constante de tu presencia en línea con mis servicios dedicados. ¡Optimicemos juntos tu experiencia digital!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <!-- Cambiando servicios por cards -->
+                    <div class="card">
+                      <img
+                        src="./Images/Docker.png"
+                        alt="Web Deployment Image"
+                        class="img-fluid"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title" data-en="Application Deployment and Database Management">Despliegue de aplicación y manejo de base de datos</h5>
+                        <p class="card-text" data-en="I excel in deploying applications and handling database management. From seamless application launches to efficient database administration, count on me for a streamlined and effective digital solution. Let's elevate your technological landscape together!">Me especializo en el despliegue de aplicaciones y la gestión de bases de datos. Desde lanzamientos de aplicaciones sin problemas hasta una administración eficiente de bases de datos, cuenta conmigo para obtener una solución digital eficaz y simplificada. ¡Elevemos juntos tu entorno tecnológico!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repetir estructura para otras secciones principales -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <!-- Sección principal 2 en un Jumbotron -->
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6 offset-md-2">
+                <h3 data-en="Proyects">Proyectos</h3>
+                <!-- Ejemplos de productos/servicios en la sección 2 -->
+                <div class="row">
+                  <div class="col-md-4">
+                    <!-- Cambiando servicios por cards -->
+                    <div class="card">
+                      <img
+                        src="./Images/Proyecto1.PNG"
+                        alt="Proyecto 1"
+                        class="img-fluid"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Multitool Proyect <strong>WIP</strong></h5>
+                        <p class="card-text" data-en="Angular project featuring multiple available tools, moving from tool to another with the navigation bar.">Proyecto realizado con Angular en las cuales tiene varias herramientas disponibles y se puede mover a través de dichas herramientas por el navbar Incluido</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <!-- Cambiando servicios por cards -->
+                    <div class="card">
+                      <img
+                        src="./Images/Proyecto2.PNG"
+                        alt="Proyecto 2"
+                        class="img-fluid"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">El tiempo Api Proyect  <strong>WIP</strong> </h5>
+                        <p class="card-text" data-en="Project developed with Angular that utilizes the Eltiempo API,where you can see the weather of the Provinces throughout the peninsula.">Proyecto realizado con Angular en las cuales se utiliza la API de Eltiempo,en las cuales puedes observar el tiempo en todas las provincias de la península</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <!-- Cambiando servicios por cards -->
+                    <div class="card">
+                      <img
+                        src="./Images/Proyecto3.PNG"
+                        alt="Proyecto 3"
+                        class="img-fluid"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Fake Products Api  <strong>WIP</strong></h5>
+                        <p class="card-text" data-en="Project developed with Angular, using the Platzi Fake Products API and the user list Provided by the same API">Proyecto realizado con Angular en las cuales se utiliza la Api de Fake Products de Platzi, y también la lista de usuarios provisionada por la misma</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repetir estructura para otras secciones principales -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img
+              src="./Images/ASLDev Logo.png"
+              width="70"
+              height="70"
+              alt="Mi logo"
+            />
+            <p
+              class="mt-3"
+              data-es="Redes Sociales!"
+              data-en="Social Networks!"
+            >
+              Redes Sociales!
+            </p>
+            <div class="social-icons mt-3">
+              <div class="social-icons mt-3">
+                <a href="https://www.instagram.com/lechu_d_cata/?hl=es"
+                  ><img
+                    src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-square2-512.png"
+                    alt="Instagram"
+                /></a>
+                <a href="https://github.com/zacky420"
+                  ><img
+                    src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-256.png"
+                    alt="Github"
+                /></a>
+                <a href="https://www.linkedin.com/in/alberto-serrano-lechuga/"
+                  ><img
+                    src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-square2-512.png"
+                    alt="LinkedIn"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h5 data-en="Contact Information" data-es="Información de contacto">
+              Información de contacto
+            </h5>
+            <ul class="list-unstyled">
+              <li>
+                <i
+                  class="fas fa-map-marker-alt"
+                  data-es="Dirección: Valencia "
+                  data-en="Location: Valencia"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fas fa-phone"
+                  data-en="Phone: +34 601215848"
+                  data-es="Teléfono: +34 601215848"
+                ></i>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i> Email:
+                <a href="mailto:albertoserrano7@hotmail.com?subject=Buenas!"
+                  >albertoserrano7@hotmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.7540684752185!2d-71.57597908488984!3d-33.02981293152047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d12c0e22b2a9%3A0xeda16706f1284dc4!2sPlaza%20de%20Armas%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana%2C%20Chile!5e0!3m2!1sen!2sus!4v1650432246343!5m2!1sen!2sus"
+              width="100%"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p
+              class="mb-0"
+              data-es="© 2024 Made by Alberto Serrano Lechuga. Todos los derechos reservados."
+              data-en="'© 2024 Made by Alberto Serrano Lechuga. All rights reserved.' "
+            ></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
